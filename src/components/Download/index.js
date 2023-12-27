@@ -2,6 +2,12 @@ import React from 'react'
 import { Button, Container, Row, Col, UncontrolledTooltip } from "reactstrap";
 
 const Component = () => {
+    const masjidBox = {
+        maxWidth: '100%',
+        height: '100px',
+        objectFit: 'cover',
+        objectPosition: 'center'
+    }
     return (
         <>
             <section className="section section-lg">
@@ -15,119 +21,124 @@ const Component = () => {
                                 </span>
                             </h2>
                             <p className="lead">
-                                Aku sudah melihat segala bentuk rezeki, tapi tidak aku temukan rezeki
+                                Aku sudah melihat segala bentuk rezeki, tapi tidak aku temukan rezeki 
                                 yang lebih baik dari pada kesabaran
                             </p>
                             <div className="btn-wrapper">
                                 <Button
                                     className="mb-3 mb-sm-0"
                                     color="success"
-                                    href="https://www.creative-tim.com/product/argon-design-system-react?ref=adsr-landing-page"
+                                    href="https://github.com/muhammadFathony/masjidnusantara.git"
+                                    target="_blank"
                                 >
-                                    Download React
+                                    Download Project
                                 </Button>
                             </div>
                             <div className="text-center">
                                 <h4 className="display-4 mb-5 mt-5">
-                                    Available on these technologies
+                                    Masjid di indonesia
                                 </h4>
                                 <Row className="justify-content-center">
                                     <Col lg="2" xs="4">
                                         <a
-                                            href="https://www.creative-tim.com/product/argon-design-system?ref=adsr-landing-page"
-                                            id="tooltip255035741"
+                                            href="https://source.unsplash.com/a-large-white-building-with-a-staircase-leading-up-to-it-eXTLDVY2FEs"
+                                            id="masjid1"
                                             target="_blank" rel="noreferrer"
                                         >
                                             <img
+                                                style={masjidBox}
                                                 alt="..."
-                                                className="img-fluid"
-                                                src="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/bootstrap.jpg"
+                                                className="img-fluid rounded"
+                                                src="https://source.unsplash.com/a-large-white-building-with-a-staircase-leading-up-to-it-eXTLDVY2FEs"
                                             />
                                         </a>
-                                        <UncontrolledTooltip delay={0} target="tooltip255035741">
-                                            Bootstrap 4 - Most popular front-end component library
+                                        <UncontrolledTooltip delay={0} target="masjid1">
+                                            Masjid Cut Meutia, Jakarta
                                         </UncontrolledTooltip>
                                     </Col>
                                     <Col lg="2" xs="4">
                                         <a
-                                            href="https://www.creative-tim.com/product/vue-argon-design-system?ref=adsr-landing-page"
-                                            id="tooltip265846671"
+                                            href="https://source.unsplash.com/a-large-building-with-a-yellow-dome-on-top-of-it-O4GpjCF2JEA"
+                                            id="masjid2"
                                             target="_blank" rel="noreferrer"
                                         >
                                             <img
+                                                style={masjidBox}
                                                 alt="..."
-                                                className="img-fluid"
-                                                src="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/vue.jpg"
+                                                className="img-fluid rounded"
+                                                src="https://source.unsplash.com/a-large-building-with-a-yellow-dome-on-top-of-it-O4GpjCF2JEA"
                                             />
                                         </a>
-                                        <UncontrolledTooltip delay={0} target="tooltip265846671">
-                                            Vue.js - The progressive javascript framework
+                                        <UncontrolledTooltip delay={0} target="masjid2">
+                                            Masjid Agung Sukabumi, Sukabumi
                                         </UncontrolledTooltip>
                                     </Col>
                                     <Col lg="2" xs="4">
                                         <a
-                                            href="https://www.creative-tim.com/product/argon-design-system-angular?ref=adsr-landing-page"
-                                            id="tooltip233150499"
+                                            href="https://source.unsplash.com/a-green-and-yellow-dome-on-top-of-a-building-SxMEtrXoVkg"
+                                            id="masjid3"
                                             target="_blank" rel="noreferrer"
                                         >
                                             <img
+                                                style={masjidBox}
                                                 alt="..."
-                                                className="img-fluid"
-                                                src="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/angular.jpg"
+                                                className="img-fluid rounded"
+                                                src="https://source.unsplash.com/a-green-and-yellow-dome-on-top-of-a-building-SxMEtrXoVkg"
                                             />
                                         </a>
-                                        <UncontrolledTooltip delay={0} target="tooltip233150499">
-                                            Angular - One framework. Mobile & Desktop
+                                        <UncontrolledTooltip delay={0} target="masjid3">
+                                            Masjid Pogung Raya, Kab. Sleman
                                         </UncontrolledTooltip>
                                     </Col>
                                     <Col lg="2" xs="4">
                                         <a
-                                            href="https://www.creative-tim.com/product/argon-design-system-react?ref=adsr-landing-page"
-                                            id="tooltip308866163"
+                                            href="https://source.unsplash.com/white-and-brown-dome-building-during-daytime-cEelDE0k3pA"
+                                            id="masjid4"
                                             target="_blank" rel="noreferrer"
                                         >
                                             <img
+                                                style={masjidBox}
                                                 alt="..."
-                                                className="img-fluid"
-                                                src="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/react.jpg"
+                                                className="img-fluid rounded"
+                                                src="https://source.unsplash.com/white-and-brown-dome-building-during-daytime-cEelDE0k3pA"
                                             />
                                         </a>
-                                        <UncontrolledTooltip delay={0} target="tooltip308866163">
-                                            React - A JavaScript library for building user
-                                            interfaces
+                                        <UncontrolledTooltip delay={0} target="masjid4">
+                                            Masjid Agung Jawa Tengah, Semarang
                                         </UncontrolledTooltip>
                                     </Col>
                                     <Col lg="2" xs="4">
                                         <a
-                                            href="https://www.creative-tim.com/product/argon-design-system-react?ref=adsr-landing-page"
-                                            id="tooltip76119384"
+                                            href="https://source.unsplash.com/a-large-building-sitting-on-top-of-a-body-of-water-7JOX1nwG2hw"
+                                            id="masjid5"
                                             target="_blank" rel="noreferrer"
                                         >
                                             <img
+                                                style={masjidBox}
                                                 alt="..."
-                                                className="img-fluid"
-                                                src="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/sketch.jpg"
+                                                className="img-fluid rounded"
+                                                src="https://source.unsplash.com/a-large-building-sitting-on-top-of-a-body-of-water-7JOX1nwG2hw"
                                             />
                                         </a>
-                                        <UncontrolledTooltip delay={0} target="tooltip76119384">
-                                            Sketch - Digital design toolkit
+                                        <UncontrolledTooltip delay={0} target="masjid5">
+                                            Masjid Apung Bandung, Bandung
                                         </UncontrolledTooltip>
                                     </Col>
                                     <Col lg="2" xs="4">
                                         <a
-                                            href="https://www.creative-tim.com/product/argon-design-system-react?ref=adsr-landing-page"
-                                            id="tooltip646643508"
+                                            href="https://source.unsplash.com/orange-and-white-dome-building-under-white-sky-during-daytime-KmRfFNUio5w"
+                                            id="masjid6"
                                             target="_blank" rel="noreferrer"
                                         >
                                             <img
+                                                style={masjidBox}
                                                 alt="..."
-                                                className="img-fluid"
-                                                src="https://s3.amazonaws.com/creativetim_bucket/tim_static_images/presentation-page/ps.jpg"
+                                                className="img-fluid rounded"
+                                                src="https://source.unsplash.com/orange-and-white-dome-building-under-white-sky-during-daytime-KmRfFNUio5w"
                                             />
                                         </a>
-                                        <UncontrolledTooltip delay={0} target="tooltip646643508">
-                                            Adobe Photoshop - Software for digital images
-                                            manipulation
+                                        <UncontrolledTooltip delay={0} target="masjid6">
+                                            Masjid 99 Kubah, Makasar
                                         </UncontrolledTooltip>
                                     </Col>
                                 </Row>
