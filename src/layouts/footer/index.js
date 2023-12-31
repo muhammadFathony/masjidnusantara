@@ -15,6 +15,12 @@ import {
 } from "reactstrap";
 
 const Component = () => {
+    const footerMasjidBox = {
+        maxWidth: '100%',
+        height: '400px',
+        objectFit: 'cover',
+        objectPosition: 'center'
+    }
     return (
         <>
             <footer className="footer has-cards">
@@ -24,8 +30,9 @@ const Component = () => {
                             <Card className="card-lift--hover shadow border-0">
                                 <Link to="/landing-page">
                                     <CardImg
+                                        style={footerMasjidBox}
                                         alt="..."
-                                        src={require("assets/img/theme/landing.jpg")}
+                                        src="https://source.unsplash.com/brown-and-black-dome-building-nTE88akjSos"
                                     />
                                 </Link>
                             </Card>
@@ -34,8 +41,9 @@ const Component = () => {
                             <Card className="card-lift--hover shadow border-0">
                                 <Link to="/profile-page">
                                     <CardImg
+                                        style={footerMasjidBox}
                                         alt="..."
-                                        src={require("assets/img/theme/profile.jpg")}
+                                        src="https://source.unsplash.com/brown-dome-building-during-daytime-PQnkV6-iZMw"
                                     />
                                 </Link>
                             </Card>
@@ -46,10 +54,10 @@ const Component = () => {
                     <Row className="row-grid align-items-center my-md">
                         <Col lg="6">
                             <h3 className="text-primary font-weight-light mb-2">
-                                Thank you for supporting us!
+                                Terimakasih telah berkunjung
                             </h3>
                             <h4 className="mb-0 font-weight-light">
-                                Let's get in touch on any of these platforms.
+                                Masjid Ukhwah Islamiyah el Azhar
                             </h4>
                         </Col>
                         <Col className="text-lg-center btn-wrapper" lg="6">
@@ -89,7 +97,7 @@ const Component = () => {
                                 target="_blank"
                             >
                                 <span className="btn-inner--icon">
-                                    <i className="fa fa-dribbble" />
+                                    <i className="fa fa-instagram" />
                                 </span>
                             </Button>
                             <UncontrolledTooltip delay={0} target="tooltip829810202">
@@ -98,7 +106,7 @@ const Component = () => {
                             <Button
                                 className="btn-icon-only rounded-circle ml-1"
                                 color="github"
-                                href="https://github.com/creativetimofficial"
+                                href="https://github.com/muhammadFathony/masjidnusantara.git"
                                 id="tooltip495507257"
                                 target="_blank"
                             >
@@ -132,7 +140,7 @@ const Component = () => {
                                         href="https://www.creative-tim.com?ref=adsr-footer"
                                         target="_blank"
                                     >
-                                        Kerja Bersih
+                                        Beranda
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
@@ -140,7 +148,7 @@ const Component = () => {
                                         href="https://www.creative-tim.com/presentation?ref=adsr-footer"
                                         target="_blank"
                                     >
-                                        About Us
+                                        Galery
                                     </NavLink>
                                 </NavItem>
                                 <NavItem>
