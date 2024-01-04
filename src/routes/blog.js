@@ -1,6 +1,8 @@
 import React from 'react'
 import Layout from "layouts"
 import Home from "views/home"
+import Gallery from "views/gallery"
+import Profile from "views/profile"
 const Blog = {
     path: "/",
     element: <Layout />,
@@ -12,6 +14,14 @@ const Blog = {
         {
             path: "beranda",
             element: <Home />
+        },
+        {
+            path: "galeri",
+            element: <Gallery />
+        },
+        {
+            path: "tentangkami",
+            element: <Profile />
         }
     ]
 }

@@ -6,20 +6,13 @@ const Component = () => {
             <section className="section">
                 <Container>
                     <Row className="row-grid justify-content-center">
-                        <Card className="m-1"
-                            style={{
-                                width: '18rem'
-                            }}
-                        >
+                        <Card className="m-1" style={{ width: '18rem' }} >
                             <img alt="Sample" src="https://picsum.photos/300/200"/>
                             <CardBody>
                                 <CardTitle tag="h5">
                                     Card title
                                 </CardTitle>
-                                <CardSubtitle
-                                    className="mb-2 text-muted"
-                                    tag="h6"
-                                >
+                                <CardSubtitle className="mb-2 text-muted" tag="h6">
                                     Card subtitle
                                 </CardSubtitle>
                                 <CardText>
@@ -30,20 +23,13 @@ const Component = () => {
                                 </Button>
                             </CardBody>
                         </Card>
-                        <Card className="m-1"
-                            style={{
-                                width: '18rem'
-                            }}
-                        >
+                        <Card className="m-1" style={{ width: '18rem' }}>
                             <img alt="Sample" src="https://picsum.photos/300/200"/>
                             <CardBody>
                                 <CardTitle tag="h5">
                                     Card title
                                 </CardTitle>
-                                <CardSubtitle
-                                    className="mb-2 text-muted"
-                                    tag="h6"
-                                >
+                                <CardSubtitle className="mb-2 text-muted" tag="h6" >
                                     Card subtitle
                                 </CardSubtitle>
                                 <CardText>
@@ -54,20 +40,13 @@ const Component = () => {
                                 </Button>
                             </CardBody>
                         </Card>
-                        <Card className="m-1"
-                            style={{
-                                width: '18rem'
-                            }}
-                        >
+                        <Card className="m-1" style={{ width: '18rem' }} >
                             <img alt="Sample" src="https://picsum.photos/300/200"/>
                             <CardBody>
                                 <CardTitle tag="h5">
                                     Card title
                                 </CardTitle>
-                                <CardSubtitle
-                                    className="mb-2 text-muted"
-                                    tag="h6"
-                                >
+                                <CardSubtitle className="mb-2 text-muted" tag="h6">
                                     Card subtitle
                                 </CardSubtitle>
                                 <CardText>
@@ -80,7 +59,6 @@ const Component = () => {
                         </Card>
                     </Row>
                 </Container>
-
             </section>
         </>
     )

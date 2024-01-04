@@ -1,8 +1,10 @@
-import React from 'react'
+import React from "react"
+import {useTextContext} from "../../context/TextContext"
 // reactstrap components
 import { Button, Container, Row, Col } from "reactstrap";
 
 const Component = () => {
+    const { showText } = useTextContext()
     return(
         <>
          <div className="position-relative">
@@ -22,6 +24,7 @@ const Component = () => {
             <Container className="shape-container d-flex align-items-center py-lg">
               <div className="col px-0">
                 <Row className="align-items-center justify-content-center">
+                  {showText && 
                   <Col className="text-center" lg="6">
                     <img
                       alt="..."
@@ -33,7 +36,6 @@ const Component = () => {
                         Ukhuwah Islamiyah el Azhar.
                     </p>
                     <div className="btn-wrapper mt-5">
-                     
                       <Button
                         className="btn-icon mb-3 mb-sm-0"
                         color="github"
@@ -62,6 +64,7 @@ const Component = () => {
                       />
                     </div>
                   </Col>
+                  }
                 </Row>
               </div>
             </Container>
