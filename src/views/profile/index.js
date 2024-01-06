@@ -22,7 +22,9 @@ const Component = () => {
                           <img
                             alt="..."
                             className="rounded-circle"
-                            src={require("assets/img/theme/team-4-800x800.jpg")}
+                            src={require("assets/img/mosque/ukhwah-potrait7.jpg")}
+                            width={300}
+                            height={200}
                           />
                         </a>
                       </div>
@@ -71,20 +73,16 @@ const Component = () => {
                   </Row>
                   <div className="text-center mt-5">
                     <h3>
-                      Jessica Jones{" "}
-                      <span className="font-weight-light">, 27</span>
+                      Masjid{" "}
+                      <span className="font-weight-light">, Ukhwah Islamiyah el Azhar</span>
                     </h3>
                     <div className="h6 font-weight-300">
                       <i className="ni location_pin mr-2" />
-                      Bucharest, Romania
+                      Banyumanik, Semarang
                     </div>
                     <div className="h6 mt-4">
                       <i className="ni business_briefcase-24 mr-2" />
-                      Solution Manager - Creative Tim Officer
-                    </div>
-                    <div>
-                      <i className="ni education_hat mr-2" />
-                      University of Computer Science
+                      Dakwah - Komunitas - Budaya
                     </div>
                   </div>
                   <div className="mt-5 py-5 border-top text-center">
