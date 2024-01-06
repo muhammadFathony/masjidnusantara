@@ -15,6 +15,7 @@ import {
 } from "reactstrap";
 
 const Component = () => {
+    // https://source.unsplash.com/brown-and-black-dome-building-nTE88akjSos
     const footerMasjidBox = {
         maxWidth: '100%',
         height: '400px',
@@ -32,7 +33,7 @@ const Component = () => {
                                     <CardImg
                                         style={footerMasjidBox}
                                         alt="..."
-                                        src="https://source.unsplash.com/brown-and-black-dome-building-nTE88akjSos"
+                                        src={require("assets/img/mosque/ukhwah5.jpg")}
                                     />
                                 </Link>
                             </Card>
@@ -43,7 +44,7 @@ const Component = () => {
                                     <CardImg
                                         style={footerMasjidBox}
                                         alt="..."
-                                        src="https://source.unsplash.com/brown-dome-building-during-daytime-PQnkV6-iZMw"
+                                        src={require("assets/img/mosque/ukhwah4.jpg")}
                                     />
                                 </Link>
                             </Card>

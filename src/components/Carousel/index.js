@@ -4,14 +4,20 @@ import { Button, Container, Row, Col, UncontrolledCarousel } from "reactstrap";
 const Component = () => {
     const items = [
         {
-            src: require("assets/img/theme/img-1-1200x1000.jpg"),
-            altText: "",
+            src: require("assets/img/mosque/ukhwah1.jpg"),
+            altText: "ukhwah1",
             caption: "",
             header: "",
         },
         {
-            src: require("assets/img/theme/img-2-1200x1000.jpg"),
-            altText: "",
+            src: require("assets/img/mosque/ukhwah3.jpg"),
+            altText: "ukhwah2",
+            caption: "",
+            header: "",
+        },
+        {
+            src: require("assets/img/mosque/ukhwah6.jpg"),
+            altText: "ukhwah2",
             caption: "",
             header: "",
         },

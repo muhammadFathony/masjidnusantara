@@ -1,13 +1,20 @@
 import React from 'react'
 import { Button, Card, CardBody, CardTitle, CardSubtitle, CardText, Container, Row } from "reactstrap";
 const Component = () => {
+    // https://picsum.photos/300/200
+    const cardImageBox = {
+        maxWidth: '100%',
+        height: '300px',
+        objectFit: 'cover',
+        objectPosition: 'center'
+    }
     return (
         <>
             <section className="section">
                 <Container>
                     <Row className="row-grid justify-content-center">
                         <Card className="m-1" style={{ width: '18rem' }} >
-                            <img alt="Sample" src="https://picsum.photos/300/200"/>
+                            <img alt="Sample" style={cardImageBox} src={require("assets/img/mosque/ukhwah-potrait1.jpg")}/>
                             <CardBody>
                                 <CardTitle tag="h5">
                                     Card title
@@ -24,7 +31,7 @@ const Component = () => {
                             </CardBody>
                         </Card>
                         <Card className="m-1" style={{ width: '18rem' }}>
-                            <img alt="Sample" src="https://picsum.photos/300/200"/>
+                            <img alt="Sample" style={cardImageBox} src={require("assets/img/mosque/ukhwah-potrait2.jpg")}/>
                             <CardBody>
                                 <CardTitle tag="h5">
                                     Card title
@@ -41,7 +48,7 @@ const Component = () => {
                             </CardBody>
                         </Card>
                         <Card className="m-1" style={{ width: '18rem' }} >
-                            <img alt="Sample" src="https://picsum.photos/300/200"/>
+                            <img alt="Sample" style={cardImageBox} src={require("assets/img/mosque/ukhwah-potrait3.jpg")}/>
                             <CardBody>
                                 <CardTitle tag="h5">
                                     Card title
