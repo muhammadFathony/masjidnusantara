@@ -4,7 +4,7 @@ import { Button, Container, Row, Col, UncontrolledCarousel } from "reactstrap";
 const Component = () => {
     const items = [
         {
-            src: require("assets/img/mosque/ukhwah1.jpg"),
+            src: require("assets/img/mosque/ukhwah7.jpg"),
             altText: "ukhwah1",
             caption: "",
             header: "",

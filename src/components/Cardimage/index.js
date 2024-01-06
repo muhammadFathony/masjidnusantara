@@ -31,7 +31,7 @@ const Component = () => {
                             </CardBody>
                         </Card>
                         <Card className="m-1" style={{ width: '18rem' }}>
-                            <img alt="Sample" style={cardImageBox} src={require("assets/img/mosque/ukhwah-potrait2.jpg")}/>
+                            <img alt="Sample" style={cardImageBox} src={require("assets/img/mosque/ukhwah-potrait5.jpg")}/>
                             <CardBody>
                                 <CardTitle tag="h5">
                                     Card title
@@ -48,7 +48,7 @@ const Component = () => {
                             </CardBody>
                         </Card>
                         <Card className="m-1" style={{ width: '18rem' }} >
-                            <img alt="Sample" style={cardImageBox} src={require("assets/img/mosque/ukhwah-potrait3.jpg")}/>
+                            <img alt="Sample" style={cardImageBox} src={require("assets/img/mosque/ukhwah-potrait6.jpg")}/>
                             <CardBody>
                                 <CardTitle tag="h5">
                                     Card title
