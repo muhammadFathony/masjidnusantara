@@ -58,7 +58,6 @@ const Component = () => {
                 toggler="#navbar_global"
                 navbar
                 isOpen={collapseOpen}
-                className={collapseClasses}
               >
                 <div className="navbar-collapse-header">
                   <Row>
