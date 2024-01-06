@@ -1,11 +1,11 @@
 {
-  "short_name": "Argon Design System React",
-  "name": "Argon Design System React by Creative Tim",
+  "short_name": "masjid nusantara",
+  "name": "Masjid Nusantara",
   "icons": [
     {
-      "src": "favicon.ico",
+      "src": "only-mosque-white.png",
       "sizes": "64x64 32x32 24x24 16x16",
-      "type": "image/x-icon"
+      "type": "image/png"
     }
   ],
   "start_url": "./index.html",

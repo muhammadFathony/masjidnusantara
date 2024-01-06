@@ -4,11 +4,7 @@ import { Link } from "react-router-dom";
 import Headroom from "headroom.js";
 // reactstrap components
 import {
-  UncontrolledCollapse,
-  DropdownMenu,
-  DropdownItem,
-  DropdownToggle,
-  UncontrolledDropdown,
+  Collapse,
   NavbarBrand,
   Navbar,
   NavItem,
@@ -21,7 +17,7 @@ import {
 } from "reactstrap";
 
 const Component = () => {
-  const [collapseClasses, setCollapseClasses] = useState('');
+  const [collapseOpen, setCollapseOpen] = useState(false);
 
   useEffect(() => {
     const headroom = new Headroom(document.getElementById('navbar-main'));
@@ -32,15 +28,14 @@ const Component = () => {
     };
   }, []);
 
-  const onExiting = () => {
-    if (collapseClasses !== 'collapsing-out') {
-      setCollapseClasses('collapsing-out');
-    }
+  const toggleNavbar = () => {
+    setCollapseOpen(!collapseOpen);
   };
 
-  const onExited = () => {
-    setCollapseClasses('');
+  const closeNavbar = () => {
+    setCollapseOpen(false);
   };
+  
     return(
         <>
         <header className="header-global">
@@ -56,15 +51,14 @@ const Component = () => {
                   src={require("assets/img/mosque/mosque-new-white.png")}
                 />
               </NavbarBrand>
-              <button className="navbar-toggler" id="navbar_global">
+              <button className="navbar-toggler" id="navbar_global" onClick={toggleNavbar}>
                 <span className="navbar-toggler-icon" />
               </button>
-              <UncontrolledCollapse
+              <Collapse
                 toggler="#navbar_global"
                 navbar
+                isOpen={collapseOpen}
                 className={collapseClasses}
-                onExiting={onExiting}
-                onExited={onExited}
               >
                 <div className="navbar-collapse-header">
                   <Row>
@@ -77,7 +71,7 @@ const Component = () => {
                       </Link>
                     </Col>
                     <Col className="collapse-close" xs="6">
-                      <button className="navbar-toggler" id="navbar_global">
+                      <button className="navbar-toggler" id="navbar_global_close" onClick={closeNavbar}>
                         <span />
                         <span />
                       </button>
@@ -86,42 +80,22 @@ const Component = () => {
                 </div>
                 <Nav className="navbar-nav-hover align-items-lg-center" navbar>
                   <NavItem>
-                    <NavLink to="beranda" tag={Link}>Beranda</NavLink>
+                    <NavLink to="beranda" tag={Link} onClick={closeNavbar}>Beranda</NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink to="galeri" tag={Link}>Galeri</NavLink>
+                    <NavLink to="galeri" tag={Link} onClick={closeNavbar}>Galeri</NavLink>
                   </NavItem>
                   <NavItem>
-                    <NavLink to="tentangkami" tag={Link}>Tentang Kami</NavLink>
+                    <NavLink to="tentangkami" tag={Link} onClick={closeNavbar}>Tentang Kami</NavLink>
                   </NavItem>
-                  <UncontrolledDropdown nav>
-                    <DropdownToggle nav>
-                      <i className="ni ni-collection d-lg-none mr-1" />
-                      <span className="nav-link-inner--text">Examples</span>
-                    </DropdownToggle>
-                    <DropdownMenu>
-                      <DropdownItem to="/landing-page" tag={Link}>
-                        Landing
-                      </DropdownItem>
-                      <DropdownItem to="/profile-page" tag={Link}>
-                        Profile
-                      </DropdownItem>
-                      <DropdownItem to="/login-page" tag={Link}>
-                        Login
-                      </DropdownItem>
-                      <DropdownItem to="/register-page" tag={Link}>
-                        Register
-                      </DropdownItem>
-                    </DropdownMenu>
-                  </UncontrolledDropdown>
                 </Nav>
                 <Nav className="align-items-lg-center ml-lg-auto" navbar>
                   <NavItem>
                     <NavLink
                       className="nav-link-icon"
-                      href="https://www.facebook.com/creativetim"
                       id="tooltip333589074"
-                      target="_blank"
+                      to="beranda" 
+                      tag={Link}
                     >
                       <i className="fa fa-facebook-square" />
                       <span className="nav-link-inner--text d-lg-none ml-2">
@@ -182,7 +156,7 @@ const Component = () => {
                   </NavItem>
                   
                 </Nav>
-              </UncontrolledCollapse>
+              </Collapse>
             </Container>
           </Navbar>
         </header>
