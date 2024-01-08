@@ -65,21 +65,21 @@ const Component = () => {
                             <Button
                                 className="btn-icon-only rounded-circle"
                                 color="twitter"
-                                href="https://twitter.com/creativetim"
+                                href="https://www.youtube.com/@Masjid_UIEA"
                                 id="tooltip475038074"
                                 target="_blank"
                             >
                                 <span className="btn-inner--icon">
-                                    <i className="fa fa-twitter" />
+                                    <i className="fa fa-youtube" />
                                 </span>
                             </Button>
                             <UncontrolledTooltip delay={0} target="tooltip475038074">
-                                Follow us
+                                Chanel Youtube
                             </UncontrolledTooltip>
                             <Button
                                 className="btn-icon-only rounded-circle ml-1"
                                 color="facebook"
-                                href="https://www.facebook.com/creativetim"
+                                href="https://web.facebook.com/search/top?q=masjid%20ukhuwah%20islamiyah%20el%20azha"
                                 id="tooltip837440414"
                                 target="_blank"
                             >
@@ -88,12 +88,12 @@ const Component = () => {
                                 </span>
                             </Button>
                             <UncontrolledTooltip delay={0} target="tooltip837440414">
-                                Like us
+                                Seputar Facebook
                             </UncontrolledTooltip>
                             <Button
                                 className="btn-icon-only rounded-circle ml-1"
                                 color="dribbble"
-                                href="https://dribbble.com/creativetim"
+                                href="https://www.instagram.com/masjid.ui.ea/"
                                 id="tooltip829810202"
                                 target="_blank"
                             >
@@ -102,21 +102,21 @@ const Component = () => {
                                 </span>
                             </Button>
                             <UncontrolledTooltip delay={0} target="tooltip829810202">
-                                Follow us
+                                Instagram
                             </UncontrolledTooltip>
                             <Button
                                 className="btn-icon-only rounded-circle ml-1"
                                 color="github"
-                                href="https://github.com/muhammadFathony/masjidnusantara.git"
+                                href="https://api.whatsapp.com/send?phone=6282280292345"
                                 id="tooltip495507257"
                                 target="_blank"
                             >
                                 <span className="btn-inner--icon">
-                                    <i className="fa fa-github" />
+                                    <i className="fa fa-whatsapp" />
                                 </span>
                             </Button>
                             <UncontrolledTooltip delay={0} target="tooltip495507257">
-                                Star on Github
+                                Whatsapp
                             </UncontrolledTooltip>
                         </Col>
                     </Row>

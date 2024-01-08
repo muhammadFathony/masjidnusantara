@@ -37,18 +37,18 @@ const Component = () => {
                         <Button
                           className="mr-4"
                           color="info"
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
+                          href="https://api.whatsapp.com/send?phone=6282280292345"
+                          target="_blank"
                           size="sm"
                         >
-                          Connect
+                          Phone
                         </Button>
                         <Button
                           className="float-right"
                           color="default"
-                          href="#pablo"
-                          onClick={(e) => e.preventDefault()}
+                          href="https://api.whatsapp.com/send?phone=6282280292345"
                           size="sm"
+                          target="_blank"
                         >
                           Message
                         </Button>

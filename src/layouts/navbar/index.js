@@ -93,8 +93,8 @@ const Component = () => {
                     <NavLink
                       className="nav-link-icon"
                       id="tooltip333589074"
-                      to="beranda" 
-                      tag={Link}
+                      href="https://web.facebook.com/search/top?q=masjid%20ukhuwah%20islamiyah%20el%20azhar" 
+                      target="_blank"
                     >
                       <i className="fa fa-facebook-square" />
                       <span className="nav-link-inner--text d-lg-none ml-2">
@@ -102,13 +102,13 @@ const Component = () => {
                       </span>
                     </NavLink>
                     <UncontrolledTooltip delay={0} target="tooltip333589074">
-                      Like us on Facebook
+                      Seputar Facebook
                     </UncontrolledTooltip>
                   </NavItem>
                   <NavItem>
                     <NavLink
                       className="nav-link-icon"
-                      href="https://www.instagram.com/creativetimofficial"
+                      href="https://www.instagram.com/masjid.ui.ea/"
                       id="tooltip356693867"
                       target="_blank"
                     >
@@ -118,39 +118,39 @@ const Component = () => {
                       </span>
                     </NavLink>
                     <UncontrolledTooltip delay={0} target="tooltip356693867">
-                      Follow us on Instagram
+                      Instagram Official
                     </UncontrolledTooltip>
                   </NavItem>
                   <NavItem>
                     <NavLink
                       className="nav-link-icon"
-                      href="https://twitter.com/creativetim"
+                      href="https://www.youtube.com/@Masjid_UIEA"
                       id="tooltip184698705"
                       target="_blank"
                     >
-                      <i className="fa fa-twitter-square" />
+                      <i className="fa fa-youtube" />
                       <span className="nav-link-inner--text d-lg-none ml-2">
-                        Twitter
+                        Youtube
                       </span>
                     </NavLink>
                     <UncontrolledTooltip delay={0} target="tooltip184698705">
-                      Follow us on Twitter
+                      Chanel Youtube
                     </UncontrolledTooltip>
                   </NavItem>
                   <NavItem>
                     <NavLink
                       className="nav-link-icon"
-                      href="https://github.com/creativetimofficial/argon-design-system-react"
+                      href="https://api.whatsapp.com/send?phone=6282280292345"
                       id="tooltip112445449"
                       target="_blank"
                     >
-                      <i className="fa fa-github" />
+                      <i className="fa fa-whatsapp" />
                       <span className="nav-link-inner--text d-lg-none ml-2">
-                        Github
+                        Whatsapp
                       </span>
                     </NavLink>
                     <UncontrolledTooltip delay={0} target="tooltip112445449">
-                      Star us on Github
+                      Whatsapp Kita
                     </UncontrolledTooltip>
                   </NavItem>
                   
