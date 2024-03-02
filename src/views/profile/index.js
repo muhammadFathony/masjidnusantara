@@ -89,11 +89,7 @@ const Component = () => {
                     <Row className="justify-content-center">
                       <Col lg="9">
                         <p>
-                          An artist of considerable range, Ryan — the name taken
-                          by Melbourne-raised, Brooklyn-based Nick Murphy —
-                          writes, performs and records all of his own music,
-                          giving it a warm, intimate feel with a solid groove
-                          structure. An artist of considerable range.
+                        Pembelajaran dalam Islam tidak hanya terbatas pada pemahaman tentang agama, tetapi juga mencakup pengetahuan dunia yang luas. Rasulullah SAW bersabda, "Menuntut ilmu adalah wajib bagi setiap muslim." Ini menunjukkan bahwa mencari pengetahuan adalah kewajiban bagi umat Islam, yang mencakup baik ilmu agama maupun ilmu dunia.
                         </p>
                         <a href="#pablo" onClick={(e) => e.preventDefault()}>
                           Show more

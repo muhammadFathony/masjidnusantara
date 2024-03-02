@@ -36,7 +36,7 @@ const Component = () => {
                             </div>
                             <div className="text-center">
                                 <h4 className="display-4 mb-5 mt-5">
-                                    Masjid di indonesia
+                                    Masjid Indonesia
                                 </h4>
                                 <Row className="justify-content-center">
                                     <Col lg="2" xs="4">

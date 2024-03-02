@@ -11,27 +11,27 @@ const Component = () => {
         const data = [
             {
                 id: 1,
-                name: "Masjid1",
+                name: "Gambar 1",
                 title: "Masjid nomor 1",
                 image: require("assets/img/mosque/ukhwah-potrait1.jpg"),
-                body: "bla bala bala bla",
-                date: "2024-01-01 08:00:00"
+                body: "Halaman masjid memiliki peran yang penting",
+                date: "01-02-2024 08:00:00"
             },
             {
                 id: 2,
-                name: "Masjid2",
+                name: "Gambar 2",
                 title: "Masjid nomor 2",
                 image: require("assets/img/mosque/ukhwah-potrait5.jpg"),
-                body: "bla bala bala bla",
-                date: "2024-01-01 08:00:00"
+                body: "suara gemercik air dari pancuran wudhu mengalir di sepanjang tepian halaman",
+                date: "01-02-2024 08:00:00"
             },
             {
                 id: 3,
-                name: "Masjid3",
+                name: "Gambar 3",
                 title: "Masjid nomor 3",
                 image: require("assets/img/mosque/ukhwah-potrait6.jpg"),
-                body: "bla bala bala bla",
-                date: "2024-01-01 08:00:00"
+                body: "Seiring berjalannya waktu, halaman masjid menjadi tempat bermain yang ramai bagi anak-anak yang gembira",
+                date: "01-02-2024 08:00:00"
             },
         ];
         setArrayImage(data)

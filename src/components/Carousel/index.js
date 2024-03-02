@@ -37,19 +37,17 @@ const Component = () => {
                     <Row className="justify-content-between align-items-center">
                         <Col className="mb-5 mb-lg-0" lg="5">
                             <h1 className="text-white font-weight-light">
-                                Bootstrap carousel
+                                Belajar dan Sabar
                             </h1>
                             <p className="lead text-white mt-4">
-                                Argon Design System comes with four pre-built pages to help
-                                you get started faster. You can change the text and images and
-                                you're good to go.
+                            Dalam ajaran Islam, pembelajaran dan kesabaran adalah dua konsep yang sangat penting. Allah SWT dalam Al-Qur'an menyatakan, "Dan katakanlah: 'Ya Tuhanku, tambahkanlah kepadaku ilmu pengetahuan.'" (QS. Ta Ha: 114).
                             </p>
                             <Button
                                 className="btn-white mt-4"
                                 color="default"
                                 href="https://demos.creative-tim.com/argon-design-system-react/#/documentation/alerts?ref=adsr-landing-page"
                             >
-                                See all components
+                                Galeri
                             </Button>
                         </Col>
                         <Col className="mb-lg-auto" lg="6">

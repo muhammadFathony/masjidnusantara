@@ -52,7 +52,7 @@ const Component = () => {
                         </span>
                       </Button>
                     </div>
-                    <div className="mt-5">
+                    {/* <div className="mt-5">
                       <small className="text-white font-weight-bold mb-0 mr-2">
                         *proudly coded by
                       </small>
@@ -62,7 +62,7 @@ const Component = () => {
                         style={{ height: "28px" }}
                         src={require("assets/img/brand/creativetim-white-slim.png")}
                       />
-                    </div>
+                    </div> */}
                   </Col>
                   }
                 </Row>
