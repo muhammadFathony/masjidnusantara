@@ -1,14 +1,16 @@
 import React from "react"
 import {useTextContext} from "../../context/TextContext"
+import { useBannerContext } from "context/BannerContext";
 // reactstrap components
 import { Button, Container, Row, Col } from "reactstrap";
 
 const Component = () => {
     const { showText } = useTextContext()
+    const { bannerData } = useBannerContext();
     return(
         <>
          <div className="position-relative">
-          <section className="section section-hero section-header">
+          <section data-id={bannerData.imageUrl} className="section section-hero section-header" style={{ backgroundImage: `url('http://localhost:8000/cms_kerjabersih/${bannerData.imageUrl}')` }}>
             <div className="shape shape-style-1 shape-default">
               <span className="span-150" />
               <span className="span-50" />
@@ -29,11 +31,11 @@ const Component = () => {
                     <img
                       alt="..."
                       className="img-fluid"
-                      src={require("assets/img/mosque/mosque-new-white.png")}
+                      src={bannerData.imageUrl}
                       style={{ width: "200px" }}
                     />
                     <p className="lead text-white">
-                        Ukhuwah Islamiyah el Azhar.
+                        {bannerData.imageUrl}
                     </p>
                     <div className="btn-wrapper mt-5">
                       <Button
