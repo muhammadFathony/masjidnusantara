@@ -10,7 +10,7 @@ const Component = () => {
     return(
         <>
          <div className="position-relative">
-          <section data-id={bannerData.imageUrl} className="section section-hero section-header" style={{ backgroundImage: `url('http://localhost:8000/cms_kerjabersih/${bannerData.imageUrl}')` }}>
+          <section data-id={bannerData.imageUrl} className="section section-hero section-header" style={{ backgroundImage: `url('${bannerData.imageUrl}')` }}>
             <div className="shape shape-style-1 shape-default">
               <span className="span-150" />
               <span className="span-50" />
