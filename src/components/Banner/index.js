@@ -31,11 +31,11 @@ const Component = () => {
                     <img
                       alt="..."
                       className="img-fluid"
-                      src={bannerData.imageUrl}
+                      src={require('assets/img/mosque/mosque-new-white.png')}
                       style={{ width: "200px" }}
                     />
                     <p className="lead text-white">
-                        {bannerData.imageUrl}
+                        Masjid At Taqwa
                     </p>
                     <div className="btn-wrapper mt-5">
                       <Button

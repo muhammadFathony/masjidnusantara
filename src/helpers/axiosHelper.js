@@ -2,6 +2,7 @@ import axios from "axios";
 
 const axiosInstance = axios.create({
     baseURL: "http://your-api-base-url.com",
+    mode: 'cors'
 });
 
 const axiosRequest = async(url, method, data, headers = {}) => {

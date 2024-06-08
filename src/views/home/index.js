@@ -13,16 +13,17 @@ const Component = () => {
     const { setBannerData } = useBannerContext();
     useEffect(() => {
         const fetchBannerData = async () => {
-            const accessToken = Cookies.get("accessToken");
+            const accessToken = process.env.REACT_APP_ACCESS_TOKEN
             console.log(accessToken)
             try {
-                const response = await axiosRequest(`${process.env.REACT_APP_BASE_URL}api/slider/branch/banner?branch_id=ad877114-b35d-4baf-bfd3-553e236af058`, 
+                const response = await axiosRequest(`${process.env.REACT_APP_BASE_URLDEV}api/slider/banner`, 
                 "GET", null, {
                     Authorization: `Bearer ${accessToken}`
                 });
                 if(response.metadata.code === 200){
-                    setLocalBannerData({ imageUrl: response.data[0].image, altText: 'banner' });
-                    setBannerData({ imageUrl: response.data[0].image, altText: 'banner' })
+                    const imageUrl = `${process.env.REACT_APP_BASE_URLDEV}${response.data[0].path}/${response.data[0].image}`
+                    setLocalBannerData({ imageUrl: imageUrl, altText: 'banner' });
+                    setBannerData({ imageUrl: imageUrl, altText: 'banner' })
                 } else {
                     setLocalBannerData({ imageUrl: require("assets/img/mosque/ali-arif-soydas-uwzPks8CE3k-unsplash.jpg"), altText: 'banner' });
                     setBannerData({ imageUrl: require("assets/img/mosque/ali-arif-soydas-uwzPks8CE3k-unsplash.jpg"), altText: 'banner' })
