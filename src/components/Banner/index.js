@@ -1,6 +1,6 @@
 import React from "react"
 import {useTextContext} from "../../context/TextContext"
-import { useBannerContext } from "context/BannerContext";
+import { useBannerContext } from "../../context/BannerContext";
 // reactstrap components
 import { Button, Container, Row, Col } from "reactstrap";
 
@@ -35,7 +35,7 @@ const Component = () => {
                       style={{ width: "200px" }}
                     />
                     <p className="lead text-white">
-                        Masjid At Taqwa
+                      Masjid Ukhuwah Islamiyah El Azhar
                     </p>
                     <div className="btn-wrapper mt-5">
                       <Button

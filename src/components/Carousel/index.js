@@ -1,7 +1,10 @@
 import React from 'react'
 import { Button, Container, Row, Col, UncontrolledCarousel } from "reactstrap";
+import { useGalleryContext } from 'context/GalleryContext';
 
 const Component = () => {
+    const { galleryData }= useGalleryContext()
+    console.log(galleryData)
     const items = [
         {
             src: require("assets/img/mosque/ukhwah7.jpg"),
@@ -52,7 +55,7 @@ const Component = () => {
                         </Col>
                         <Col className="mb-lg-auto" lg="6">
                             <div className="rounded shadow-lg overflow-hidden transform-perspective-right">
-                                <UncontrolledCarousel items={items} />
+                                <UncontrolledCarousel items={galleryData} />
                             </div>
                         </Col>
                     </Row>
